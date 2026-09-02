@@ -100,14 +100,26 @@
             >;
         };
 
-        extra3 {
+        layer_6_empty {
             display-name = "Cyan";
-            status = "reserved";
+            bindings = <
+&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                                  &none   &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none   &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                &none      &none                 &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none          &none  &none  &none  &none  &none
+            >;
         };
 
-        extra4 {
+        layer_7_empty {
             display-name = "Yellow";
-            status = "reserved";
+            bindings = <
+&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                                  &none   &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none   &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                &none      &none                 &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none          &none  &none  &none  &none  &none
+            >;
         };
 
         layer_8_change_pages {
