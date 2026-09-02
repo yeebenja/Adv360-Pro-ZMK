@@ -21,6 +21,16 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        trigger_momentary_layer_8 {
+            bindings = <&mo 8>;
+            key-positions = <32 31>;
+            slow-release;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -68,18 +78,18 @@
             >;
         };
 
-        extra1 {
+        layer_4_numbers {
             display-name = "Red";
             bindings = <
-&none  &none  &none  &none  &none  &none  &none                                          &trans           &none  &none            &none            &none            &none  &none
-&none  &none  &none  &none  &none  &none  &none                                          &none            &none  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none  &none
-&none  &none  &none  &none  &none  &none  &none          &none  &none      &none  &none  &none            &none  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none  &none
-&none  &none  &none  &none  &none  &none                        &none      &none                          &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none  &none
-&none  &none  &none  &none  &none         &kp BACKSPACE  &none  &none      &none  &none  &kp KP_NUMBER_0         &none            &none            &none            &none  &none
+&none  &none  &none  &none  &none  &none  &none                                              &trans           &none  &none            &none            &none            &none  &none
+&none  &none  &none  &none  &none  &none  &none                                              &none            &none  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none  &none
+&none  &none  &none  &none  &none  &none  &none          &none  &none      &none  &none      &none            &none  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none  &none
+&none  &none  &none  &none  &none  &none                        &none      &none                              &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none  &none
+&none  &none  &none  &none  &none         &kp BACKSPACE  &none  &none      &none  &kp ENTER  &kp KP_NUMBER_0         &none            &none            &none            &none  &none
             >;
         };
 
-        extra2 {
+        layer_5_developer {
             display-name = "Purple";
             bindings = <
 &none  &none  &none  &none  &none  &none  &none                                                                 &trans     &none           &none            &none                 &none                  &none  &none
@@ -98,6 +108,16 @@
         extra4 {
             display-name = "Yellow";
             status = "reserved";
+        };
+
+        layer_8_change_pages {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans                     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp RS(RG(RIGHT_BRACKET))  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans                     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &kp RS(RG(LEFT_BRACKET))   &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans                     &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
