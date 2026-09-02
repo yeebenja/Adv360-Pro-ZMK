@@ -226,13 +226,13 @@
   macro_next_tab: macro_next_tab {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    bindings = <&macro_press &kp RG>, <&macro_press &kp RS>, <&kp RBKT>, <&macro_release &kp RS>, <&macro_release &kp RG>;
+    bindings = <&macro_press &kp RGUI>, <&macro_press &kp RSHFT>, <&kp RBKT>, <&macro_release &kp RSHFT>, <&macro_release &kp RGUI>;
     display-name = "Next Browser Tab";
   };
 
   macro_prev_tab: macro_prev_tab {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    bindings = <&macro_press &kp RG>, <&macro_press &kp RS>, <&kp LBKT>, <&macro_release &kp RS>, <&macro_release &kp RG>;
+    bindings = <&macro_press &kp RGUI>, <&macro_press &kp RSHFT>, <&kp LBKT>, <&macro_release &kp RSHFT>, <&macro_release &kp RGUI>;
     display-name = "Previous Browser Tab";
   };
