@@ -222,3 +222,17 @@
     bindings = <&mkp MB1 &mkp MB1>;
     display-name = "Double Click";
   };
+
+  macro_next_tab: macro_next_tab {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&macro_press &kp RG>, <&macro_press &kp RS>, <&kp RBKT>, <&macro_release &kp RS>, <&macro_release &kp RG>;
+    display-name = "Next Browser Tab";
+  };
+
+  macro_prev_tab: macro_prev_tab {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&macro_press &kp RG>, <&macro_press &kp RS>, <&kp LBKT>, <&macro_release &kp RS>, <&macro_release &kp RG>;
+    display-name = "Previous Browser Tab";
+  };
