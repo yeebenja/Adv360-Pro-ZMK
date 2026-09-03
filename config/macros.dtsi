@@ -222,17 +222,3 @@
     bindings = <&mkp MB1 &mkp MB1>;
     display-name = "Double Click";
   };
-
-  macro_next_tab: macro_next_tab {
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings = <&macro_press &kp RCTRL>, <&kp TAB>, <&macro_release &kp RCTRL>;
-    display-name = "Next Browser Tab";
-  };
-
-  macro_prev_tab: macro_prev_tab {
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings = <&macro_press &kp RCTRL>, <&macro_press &kp RSHFT>, <&kp TAB>, <&macro_release &kp RSHFT>, <&macro_release &kp RCTRL>;
-    display-name = "Previous Browser Tab";
-  };
