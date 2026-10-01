@@ -21,14 +21,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        trigger_momentary_layer_8 {
-            bindings = <&mo 8>;
-            key-positions = <32 31>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -36,11 +29,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2  &kp N3  &kp N4  &kp N5  &tog 1                                                                       &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W   &kp E   &kp R   &kp T   &none                                                                        &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S   &kp D   &kp F   &kp G   &none     &kp RIGHT_GUI      &kp RCTRL         &kp RIGHT_ALT  &kp RIGHT_GUI  &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X   &kp C   &kp V   &kp B                                &kp LEFT_ALT      &kp PG_UP                                &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2      &kp GRAVE  &mo 5   &mo 4   &none           &kp BSPC  &kp RIGHT_CONTROL  &mo 5             &kp PG_DN      &kp ENTER      &kp SPACE          &none   &none      &kp LBKT  &kp RBKT  &mo 2
+&kp EQUAL  &kp N1     &kp N2  &kp N3  &kp N4   &kp N5  &tog 1                                                                       &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q      &kp W   &kp E   &kp R    &kp T   &none                                                                        &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp ESC    &kp A      &kp S   &kp D   &lt 8 F  &kp G   &none     &kp RIGHT_GUI      &kp RCTRL         &kp RIGHT_ALT  &kp RIGHT_GUI  &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z      &kp X   &kp C   &kp V    &kp B                                &kp LEFT_ALT      &kp PG_UP                                &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&mo 2      &kp GRAVE  &mo 5   &mo 4   &none            &kp BSPC  &kp RIGHT_CONTROL  &mo 5             &kp PG_DN      &kp ENTER      &kp SPACE          &none   &none      &kp LBKT  &kp RBKT  &mo 2
             >;
         };
 
@@ -91,11 +84,11 @@
         layer_5_developer {
             display-name = "Purple";
             bindings = <
-&none     &none  &none  &none  &none  &none  &none                                                                 &trans     &none           &none            &none                 &none                  &none  &none
-&none     &none  &none  &none  &none  &none  &none                                                                 &none      &kp DOWN        &kp RIGHT        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none
-&none     &none  &none  &none  &none  &none  &none  &kp RIGHT_GUI  &kp RCTRL         &kp RIGHT_ALT  &kp RIGHT_GUI  &none      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none  &none
-&kp LSHFT &none  &none  &none  &none  &none                        &kp LEFT_ALT      &none                                    &kp UP_ARROW    &kp LEFT_ARROW   &kp PLUS              &kp EQUAL              &none  &kp RSHFT
-&none     &none  &none  &none  &none         &none  &none          &none             &none          &none          &kp SPACE                  &none            &none                 &none                  &none  &none
+&none      &none  &none  &none  &none  &none  &none                                                                 &trans     &none           &none            &none                 &none                  &none  &none
+&none      &none  &none  &none  &none  &none  &none                                                                 &none      &kp DOWN        &kp RIGHT        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none
+&none      &none  &none  &none  &none  &none  &none  &kp RIGHT_GUI  &kp RCTRL         &kp RIGHT_ALT  &kp RIGHT_GUI  &none      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none  &none
+&kp LSHFT  &none  &none  &none  &none  &none                        &kp LEFT_ALT      &none                                    &kp UP_ARROW    &kp LEFT_ARROW   &kp PLUS              &kp EQUAL              &none  &kp RSHFT
+&none      &none  &none  &none  &none         &none  &none          &none             &none          &none          &kp SPACE                  &none            &none                 &none                  &none  &none
             >;
         };
 
@@ -103,10 +96,10 @@
             display-name = "Cyan";
             bindings = <
 &none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none                                  &none   &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none   &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                &none      &none                 &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none          &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                &none      &none                &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
 
@@ -114,20 +107,20 @@
             display-name = "Yellow";
             bindings = <
 &none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none                                  &none   &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none   &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                &none      &none                 &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none          &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                &none      &none                &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
 
         layer_8_change_pages {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans                     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp LC(TAB)                &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans                     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &kp LC(LS(TAB))            &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans                     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans           &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp LC(TAB)      &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &kp LC(LS(TAB))  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans           &trans  &trans  &trans  &trans
             >;
         };
     };
